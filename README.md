@@ -27,6 +27,10 @@ Create an onclick event for `#clickme` that gets the value of `#name` and `#grad
 someList.innerHTML = someList.innerHTML + "<li>New Item</li>";
 ```
 
+Feel free to extropolate or add any features you think are interesting. Add validation, go wild!
+
+*CHALLENGE*: You'll notice there is an additional script in the `js` folder, `js/students.js`. In that script is an Array of student Objects. The challenge, for those of you who are feeling really confident in your JS ability, is to, in your HTML, delete what is currently in the `<div class="roster">`. Add that script to your HTML before the project.js and then, in project.js, loop through that array, and populate the roster, AS WELL AS assigning a grade in the `#reportcard` for each student. If you're feeling REALLY ambitious, think about how you would _delete_ one of the `<li>` (onclick for instance).
+
 ### Step 4 - Commit and Sync
 
 Work on your website locally and view it in the browser by opening your index.html file. When your site looks good, Commit and Sync with the Github App.
