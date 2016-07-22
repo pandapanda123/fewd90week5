@@ -19,15 +19,15 @@ Hide and show `div.roster` and `div.assign` when the user clicks on `#roster` an
 Create an onclick event for `#clickme` that gets the value of `#name` and `#grade`.
 
 - Decide on what grade thresholds determine what letter grade (what the "curve" is).
-- Perform a series of checks to determine the persons letter grade (think Age Privilege exercise).
-- Add a `<li>` to the `#reportcard` `<ul>` by adding to it's `innerHTML` property.
+- Perform a series of checks to determine the person's letter grade (think Age Privilege exercise).
+- Add a `<li>` to the `#reportcard` `<ul>` by adding to its `innerHTML` property.
 - This will look similar to:
 
 ```javascript
 someList.innerHTML = someList.innerHTML + "<li>New Item</li>";
 ```
 
-Feel free to extropolate or add any features you think are interesting. Add validation, go wild!
+Feel free to extrapolate or add any features you think are interesting. Add validation, go wild!
 
 **CHALLENGE**: You'll notice there is an additional script in the `js` folder, `js/students.js`. In that script is an Array of student Objects. The challenge, for those of you who are feeling really confident in your JS ability, is to, in your HTML, delete what is currently in the `<div class="roster">`. Add that script to your HTML before the project.js and then, in project.js, loop through that array, and populate the roster, AS WELL AS assigning a grade in the `#reportcard` for each student. If you're feeling REALLY ambitious, think about how you would _delete_ one of the `<li>` (onclick for instance).
 
