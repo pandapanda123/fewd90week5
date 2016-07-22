@@ -2,7 +2,7 @@
 
 Create a Grade Assignment app that will allow you to view your student roster, and assign a curved letter grade to each student.
 
-[Prompt](prompt.gif)
+![Prompt](prompt.gif)
 
 ### Step 1 - Fork this repository.
 
