@@ -1,6 +1,8 @@
-# Homework 4 - Name
+# Homework 5 - Grade Assigner
 
-Brief 
+Create a Grade Assignment app that will allow you to view your student roster, and assign a curved letter grade to each student.
+
+[Prompt](prompt.gif)
 
 ### Step 1 - Fork this repository.
 
@@ -12,7 +14,18 @@ From the repository homepage (which will be http://github.com/YOURUSERNAME/fewd9
 
 ### Step 3 - Build!
 
-Assignment requirements.
+Hide and show `div.roster` and `div.assign` when the user clicks on `#roster` and `#assign`. Turn the class `.selected` on and off on the `#roster` and `#assign` as appropriate.
+
+Create an onclick event for `#clickme` that gets the value of `#name` and `#grade`.
+
+- Decide on what grade thresholds determine what letter grade (what the "curve" is).
+- Perform a series of checks to determine the persons letter grade (think Age Privilege exercise).
+- Add a `<li>` to the `#reportcard` `<ul>` by adding to it's `innerHTML` property.
+- This will look similar to:
+
+```javascript
+someList.innerHTML = someList.innerHTML + "<li>New Item</li>";
+```
 
 ### Step 4 - Commit and Sync
 
