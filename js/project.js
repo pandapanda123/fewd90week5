@@ -93,7 +93,7 @@ function assignAppear ()
      var realGrade = "Grade";
     }
     document.getElementById("reportcard").innerHTML=document.getElementById("reportcard").innerHTML+"<li>"+studentName+","+realGrade+"</li>";
-    
+    document.getElementById("reportcard").style.display="block";
   
     }
 
