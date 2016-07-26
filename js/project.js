@@ -2,30 +2,36 @@
 
 // FREEBIES! Blank-out the inputs onfocus.
 
+var i=0;
+
 
 document.getElementById("roster").onclick = rosterAppear; 
 
 function rosterAppear ()
 {
-
-	document.querySelector("div").style.display = "block";
+    
+    document.getElementById("rosterblock").style.display = "block";
 	document.getElementById("assignblock").style.display = "none";
 	document.querySelector("#roster").classList.add("selected");
 	document.querySelector("#assign").classList.remove("selected");
-
-	
+	while (i<6){
+		document.getElementById("blank").innerHTML=document.getElementById("blank").innerHTML+"<li>"+students[i].name+"</li>";
+		i++;
+	}
+    
 }
 
 document.getElementById("assign").onclick = assignAppear; 
 
 function assignAppear ()
+
 {
+	document.getElementById("rosterblock").style.display = "none";
 	document.getElementById("assignblock").style.display = "block";
-	document.querySelector("div").style.display = "none";
 	document.querySelector("#assign").classList.add("selected");
 	document.querySelector("#roster").classList.remove("selected");
 	
-	
+
 	document.getElementById("name").onfocus = clearName;
     document.getElementById("grade").onfocus = clearGrade;
 
@@ -79,13 +85,19 @@ function assignAppear ()
     else if (level>=60) {
      var realGrade = "D-";	
     }
-    else {
+    else if (level<60) {
      var realGrade = "F";	
     }
+    else
+    {
+     var realGrade = "Grade";
+    }
     document.getElementById("reportcard").innerHTML=document.getElementById("reportcard").innerHTML+"<li>"+studentName+","+realGrade+"</li>";
-    document.getElementById("reportcard").style.display="block";
+    
+  
     }
 
+ 
 }   
 
  
